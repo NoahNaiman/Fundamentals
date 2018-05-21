@@ -6,6 +6,6 @@ align="center">
 </div>
 
 <div align="center">
-	<strong>All those fundamentals you wish interviews
-ignored</strong>
+	<strong>My implementation of all those fundamentals you
+wish interviewers ignored</strong>
 <div>
