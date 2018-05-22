@@ -59,6 +59,7 @@ Included methods are:
 * Data accessor
 * Data Mutator
 * Create a deep copy
+* Print out data
 
 
 **Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/Node.java
