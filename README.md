@@ -13,8 +13,8 @@ align="center">
 
 
 ## Table of Contents
-- [Philosophy](#Philosophy)
-- [Data Structures](#Data-Structures)
+- [Philosophy](#philosophy)
+- [Data Structures](#data-structures)
 
 ## Philosophy
 Towards the end of my very first technical interview two years ago,
