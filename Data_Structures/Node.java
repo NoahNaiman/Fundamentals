@@ -10,7 +10,7 @@ public class Node<T extends Comparable<T>>{
 	// **************************************************
     // Fields
     // **************************************************
-	public T data = null;
+	private T data = null;
 
 	// **************************************************
     // Constructors
@@ -51,5 +51,15 @@ public class Node<T extends Comparable<T>>{
      */
     public void setData(T newData){
     	data = newData;
+    }
+
+    /**
+     * Creates and returns a deep copy of this Node.
+     * @return 
+     *	A new Node which is a copy of the original Node
+     */
+    public Node copyNode(){
+    	Node<T> nodeCopy = new Node<T>(this.data);
+    	return nodeCopy
     }
 }
