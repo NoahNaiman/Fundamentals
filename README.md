@@ -14,6 +14,7 @@ align="center">
 
 ## Table of Contents
 - [Philosophy](#Philosophy)
+- [Data Structures](#Data-Structures)
 
 ## Philosophy
 Towards the end of my very first technical interview two years ago,
@@ -37,3 +38,30 @@ If you feel I could improve something somewhere, please let me
 know!
 
 **_Noah Naiman, 2018_**
+
+## Data Structures
+
+### A Note on Nodes
+For this project I chose to abstract each type of Node into its
+own seperate class. Each Node type inherits from the superclass Node.
+I chose to write each Node seperately instead of built directly into
+larger structures for two main reasons:
+
+1. It makes reading my work less cluttered.
+2. As this was a project to deeply learn fundamentals, I felt that
+every structure deserved its own file. From the simplest Node to the
+most complex Trees, I wanted to give each structure the respect it
+deserves.
+
+### Node
+A basic Node class to hold generic comparable Data. Included methods are:
+* Unparameterized constructor
+* Parameterized constructor
+* Data accessor
+* Data Mutator
+* Create a deep copy
+**Generic Image:**
+"_________"
+|		  |
+|   Data  |
+|_________|
