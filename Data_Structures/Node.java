@@ -1,0 +1,55 @@
+/**
+ * <h1>Node Class</h1>
+ * A basic Node superclass to be
+ * extended by various data structures.
+ *
+ * @author Noah Naiman
+ * @since 5-21-2018
+ */
+public class Node<T extends Comparable<T>>{
+	// **************************************************
+    // Fields
+    // **************************************************
+	public T data = null;
+
+	// **************************************************
+    // Constructors
+    // **************************************************
+
+    /**
+    * Default constructor.<br>
+    * Value of data will be null.
+    */
+    public Node(){};
+
+    /**
+    * Parameterized constructor.<br>
+    * @param initialData
+    *	Sets data to initialData.
+    */
+	public Node(T initialData){
+		data = initialData;
+	}
+
+	// **************************************************
+    // Public methods
+    // **************************************************
+
+    /**
+     * Accessor method to get this Node's data.
+     * @return
+     *	This Node's data
+     */
+    public T getData(){
+    	return data;
+    }
+
+    /**
+     * Mutator method to set this Node's data.
+     * @param newData
+     *	What this Node's data should be set to
+     */
+    public void setData(T newData){
+    	data = newData;
+    }
+}
