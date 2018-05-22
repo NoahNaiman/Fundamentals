@@ -54,10 +54,10 @@ most complex Trees, I wanted to give each structure the respect it
 deserves.
 
 ### Node
-A basic Node class to hold generic comparable Data. Included methods are:
+A basic Node class to hold generic comparable Data.<br>**Quick Link:** <br>
+Included methods are:
 * Unparameterized constructor
 * Parameterized constructor
 * Data accessor
 * Data Mutator
-* Create a deep copy<br>
-**Quick Link:**<br>
+* Create a deep copy
