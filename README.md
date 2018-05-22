@@ -54,7 +54,7 @@ most complex Trees, I wanted to give each structure the respect it
 deserves.
 
 ### Node
-A basic Node class to hold generic comparable Data.<br>**Quick Link:** <br>
+A basic Node class to hold generic comparable Data.<br><br>**Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/Node.java<br><br>
 Included methods are:
 * Unparameterized constructor
 * Parameterized constructor
