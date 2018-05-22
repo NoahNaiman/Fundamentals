@@ -60,5 +60,7 @@ Included methods are:
 * Parameterized constructor
 * Data accessor
 * Data Mutator
-* Create a deep copy<br><br>
+* Create a deep copy
+
+
 **Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/Node.java
