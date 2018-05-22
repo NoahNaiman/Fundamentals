@@ -62,6 +62,6 @@ A basic Node class to hold generic comparable Data. Included methods are:
 * Create a deep copy
 **Generic Image:**<br>
 "_________"<br>
-|		  |<br>
-|   Data  |<br>
+|&nbsp&nbsp&nbsp&nbsp&nbsp|<br>
+|&nbsp&nbspData&nbsp&nbsp|<br>
 |_________|
