@@ -59,9 +59,5 @@ A basic Node class to hold generic comparable Data. Included methods are:
 * Parameterized constructor
 * Data accessor
 * Data Mutator
-* Create a deep copy
-**Generic Image:**<br>
-"_________"<br>
-|&nbsp&nbsp&nbsp&nbsp&nbsp|<br>
-|&nbsp&nbspData&nbsp&nbsp|<br>
-|_________|
+* Create a deep copy<br>
+**Quick Link:**<br>
