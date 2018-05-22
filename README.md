@@ -48,10 +48,8 @@ I chose to write each Node seperately instead of built directly into
 larger structures for two main reasons:
 
 1. It makes reading my work less cluttered.
-2. As this was a project to deeply learn fundamentals, I felt that
-every structure deserved its own file. From the simplest Node to the
-most complex Trees, I wanted to give each structure the respect it
-deserves.
+2. As this was a project to deeply learn fundamentals, I wanted to give each structure the respect it
+deserves by putting it in its own file.
 
 ### Node
 A basic Node class to hold generic comparable Data.<br>
