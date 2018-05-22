@@ -62,4 +62,14 @@ public class Node<T extends Comparable<T>>{
     	Node<T> nodeCopy = new Node<T>(this.data);
     	return nodeCopy;
     }
+
+    /**
+     * Prints Node's stored data.
+     * @return 
+     *	String representing the Node's data
+     */
+    public String toString()){
+    	String s = "" + data;
+    	return s;
+    }
 }
