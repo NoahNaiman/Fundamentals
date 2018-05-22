@@ -60,6 +60,6 @@ public class Node<T extends Comparable<T>>{
      */
     public Node copyNode(){
     	Node<T> nodeCopy = new Node<T>(this.data);
-    	return nodeCopy
+    	return nodeCopy;
     }
 }
