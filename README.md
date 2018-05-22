@@ -60,9 +60,8 @@ A basic Node class to hold generic comparable Data. Included methods are:
 * Data accessor
 * Data Mutator
 * Create a deep copy
-
-**Generic Image:**
-"_________"
-|		  |
-|   Data  |
+**Generic Image:**<br>
+"_________"<br>
+|		  |<br>
+|   Data  |<br>
 |_________|
