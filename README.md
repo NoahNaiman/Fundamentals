@@ -8,7 +8,7 @@ align="center">
 <div align="center">
 	<strong>Everything you wish the interviewer ignored</strong><br>
 	My implementations of various fundamental Data Structures and Algorithms
-<div>
+</div>
 
 
 
