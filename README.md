@@ -59,3 +59,12 @@ Included methods are:
 
 
 **Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/Node.java
+### SinglyLinkedListNode
+A Node class to hold generic comparable data, and a pointer another node. A building block for a singly linked list.<br>
+Included methods are:
+* Unparameterized constructor
+* Parameterized constructor to set data
+* Parameterized constructor to set data and next node.
+
+
+**Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/SinglyLinkedListNode.java
