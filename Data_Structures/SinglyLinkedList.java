@@ -40,13 +40,15 @@ public class SinglyLinkedList<T extends Comparable<T>>{
     * @param newData
     *	New data to be prepended
     */
-    public void append(T newData){
+    public void prepend(T newData){
     	if(head.data == null){
     		head.data = newData;
     		length++;
     	}
     	else{
-    		head.next = new SinglyLinkedListNode<T>(newData);
+    		SinglyLinkedListNode<T> temp = new SinglyLinkedListNode<T>(head.data, head.next);
+    		head.data = newData;
+    		head.next = temp;
     		length++;
     	}
     }
@@ -82,12 +84,11 @@ public class SinglyLinkedList<T extends Comparable<T>>{
     * True if checkFor is contained, false if otherwise
     */
     public boolean contains(T checkFor){
-    	SinglyLinkedListNode<T> cur = head;
-    	do{
-    		if(cur.data.compareTo(checkFor) == 0){
+    	for (SinglyLinkedListNode<T> cur = head; cur.next!=null; cur=cur.next) {
+			if(cur.data.compareTo(checkFor) == 0){
     			return true;
     		}
-    	}while(cur.data != null);
+		}
     	return false;
     }
 
@@ -126,8 +127,51 @@ public class SinglyLinkedList<T extends Comparable<T>>{
     	}
     }
 
+    /**
+    * Returns a clone of this list.<br>
+    * Worst Case Time: O(n)
+    * @return
+    *	A Singly Linked List which is a clone of current list
+    */
     public SinglyLinkedList<T> clone(){
-    	//TODO
+    	SinglyLinkedList<T> cloneList = new SinglyLinkedList<T>();
+    	for (SinglyLinkedListNode<T> cur = head; cur.next!=null; cur=cur.next) {
+			cloneList.append(cur.data);
+		}
+    	return cloneList;
+    }
+
+    /**
+    * Returns a reverse version of this list.<br>
+    * Worst Case Time: O(n)
+    * @return
+    *	A Singly Linked List which is a reversed version of current list
+    */
+	public SinglyLinkedList<T> reverse(){
+    	SinglyLinkedList<T> reverseList = new SinglyLinkedList<T>();
+    	for (SinglyLinkedListNode<T> cur = head; cur.next!=null; cur=cur.next) {
+			reverseList.prepend(cur.data);
+		}
+    	return reverseList;
+    }
+
+    /**
+    * Returns a String representing the data held in this list.<br>
+    * Worst Case Time: O(n)
+    * @return
+    *	A String representing an ASCII image of this list
+    */
+    public String toString(){
+    	if(head.data == null){
+    		return "[]";
+    	}
+    	else{
+    		String listImage = "[";
+    		for (SinglyLinkedListNode<T> cur = head; cur.next!=null; cur=cur.next) {
+				listImage += cur.data + "|--> ";
+			}
+			return listImage + "]";
+    	}
     }
 
 }
