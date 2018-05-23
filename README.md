@@ -43,13 +43,13 @@ know!
 
 ### A Note on Nodes
 For this project I chose to abstract each type of Node into its
-own seperate class. Each Node type inherits from the superclass Node.
+own seperate class and file. Each Node type inherits from the superclass Node.
 I chose to write each Node seperately instead of built directly into
 larger structures for two main reasons:
 
 1. It makes reading my work less cluttered.
-2. As this was a project to deeply learn fundamentals, I wanted to give each structure the respect it
-deserves by putting it in its own file.
+2. As this was a project to deeply learn fundamentals, I wanted to make strong distinctions
+between each Node type.
 
 ### Node
 A basic Node class to hold generic comparable Data.<br>
