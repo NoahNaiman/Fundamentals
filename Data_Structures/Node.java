@@ -10,7 +10,7 @@ public class Node<T extends Comparable<T>>{
     // **************************************************
     // Fields
     // **************************************************
-	private T data = null;
+	private T data;
 
     // **************************************************
     // Constructors
@@ -20,12 +20,14 @@ public class Node<T extends Comparable<T>>{
     * Default constructor.<br>
     * Value of data will be null.
     */
-    public Node(){};
+    public Node(){
+    	data = null;
+    };
 
     /**
     * Parameterized constructor.<br>
     * @param initialData
-    *	Sets data to initialData.
+    *	Sets data to initialData
     */
 	public Node(T initialData){
 		data = initialData;
