@@ -53,6 +53,7 @@ larger structures for two main reasons:
 2. As this was a project to deeply learn fundamentals, I wanted to make strong distinctions
 between each Node type.
 
+
 #### Node
 A basic Node class to hold generic comparable Data.<br>
 Included methods are:
