@@ -41,7 +41,9 @@ know!
 
 ## Data Structures
 
-### A Note on Nodes
+### Nodes
+
+#### A Note on Nodes
 For this project I chose to abstract each type of Node into its
 own seperate class and file. Each Node type inherits from the superclass Node.
 I chose to write each Node seperately instead of built directly into
@@ -51,7 +53,7 @@ larger structures for two main reasons:
 2. As this was a project to deeply learn fundamentals, I wanted to make strong distinctions
 between each Node type.
 
-### Node
+#### Node
 A basic Node class to hold generic comparable Data.<br>
 Included methods are:
 * Unparameterized constructor
@@ -59,7 +61,7 @@ Included methods are:
 
 
 **Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/Node.java
-### SinglyLinkedListNode
+#### Singly Linked Node
 A Node class to hold generic comparable data, and a pointer another node. A building block for a singly linked list.<br>
 Included methods are:
 * Unparameterized constructor
@@ -68,7 +70,18 @@ Included methods are:
 
 
 **Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/SinglyLinkedListNode.java
-### SinglyLinkedList
+#### Binary Tree Node
+A Node class to hold generic comparable data, and three points: two to child nodes and one to a parent node. A building block for binary trees.<br>
+Included methods are:
+* Unparameterized constructor
+* Parameterized constructor to set data
+
+
+**Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/BinaryTreeNodeNode.java
+
+### Lists
+
+#### Singly Linked List
 A list in which each node contains data and a pointer to the next node.<br>
 Included methods are:
 * Get length
