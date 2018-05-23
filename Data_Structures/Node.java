@@ -32,46 +32,4 @@ public class Node<T extends Comparable<T>>{
 	public Node(T initialData){
 		data = initialData;
 	}
-
-    // **************************************************
-    // Public methods
-    // **************************************************
-
-    /**
-     * Accessor method to get this Node's data.
-     * @return
-     *	This Node's data
-     */
-    public T getData(){
-    	return data;
-    }
-
-    /**
-     * Mutator method to set this Node's data.
-     * @param newData
-     *	What this Node's data should be set to
-     */
-    public void setData(T newData){
-    	data = newData;
-    }
-
-    /**
-     * Creates and returns a deep copy of this Node.
-     * @return 
-     *	A new Node which is a copy of the original Node
-     */
-    public Node copyNode(){
-    	Node<T> nodeCopy = new Node<T>(this.data);
-    	return nodeCopy;
-    }
-
-    /**
-     * Prints Node's stored data.
-     * @return 
-     *	String representing the Node's data
-     */
-    public String toString()){
-    	String s = "" + data;
-    	return s;
-    }
 }

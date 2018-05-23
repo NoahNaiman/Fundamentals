@@ -55,11 +55,7 @@ between each Node type.
 A basic Node class to hold generic comparable Data.<br>
 Included methods are:
 * Unparameterized constructor
-* Parameterized constructor
-* Data accessor
-* Data Mutator
-* Create a deep copy
-* Print out data
+* Parameterized constructor to set data
 
 
 **Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/Node.java
