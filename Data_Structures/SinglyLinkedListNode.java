@@ -1,18 +1,17 @@
 /**
  * <h1>Singly Linked List Node Class</h1>
  * A Node class used to construct a singly linked list.
- * Extends Node class.
  *
  * @author Noah Naiman
  * @since 5-22-2018
  */
 
-public class SinglyLinkedListNode<T extends Comparable<T>> extends Node{
+public class SinglyLinkedListNode<T extends Comparable<T>>{
 	// **************************************************
     // Fields
     // **************************************************
     private T data;
-    private SinglyLinkedListNode next;
+    private SinglyLinkedListNode<T> next;
 
     // **************************************************
     // Constructors
@@ -35,7 +34,7 @@ public class SinglyLinkedListNode<T extends Comparable<T>> extends Node{
     *	Sets data to initialData
     */
 	public SinglyLinkedListNode(T initialData){
-		super(initialData);
+		data = initialData;
 		next = null;
 	}
 
@@ -46,8 +45,8 @@ public class SinglyLinkedListNode<T extends Comparable<T>> extends Node{
     * @param nextNode
     *	Points next to nextNode
     */
-	public SinglyLinkedListNode(T initialData, SinglyLinkedListNode nextNode){
-		super(initialData);
+	public SinglyLinkedListNode(T initialData, SinglyLinkedListNode<T> nextNode){
+		data = initialData;
 		next = nextNode;
 	}
 }

@@ -1,7 +1,6 @@
 /**
  * <h1>Node Class</h1>
- * A basic Node superclass to be
- * extended by various data structures.
+ * A basic Node class.
  *
  * @author Noah Naiman
  * @since 5-21-2018
