@@ -68,3 +68,17 @@ Included methods are:
 
 
 **Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/SinglyLinkedListNode.java
+### SinglyLinkedList
+A list in which each node contains data and a pointer to the next node.<br>
+Included methods are:
+* Get length
+* Prepend to list
+* Append to list
+* Check if something is in the list
+* Delete the first found instance of some given data
+* Delete all instances of some given data
+* Clone list
+* Get a reversed version of the list
+* Print out list
+
+**Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/SinglyLinkedList.java
