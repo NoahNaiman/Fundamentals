@@ -31,4 +31,9 @@ public class Node<T extends Comparable<T>>{
 	public Node(T initialData){
 		data = initialData;
 	}
+
+    public Node clone(){
+        Node<T> nodeCopy = new Node<T>(this.data);
+        return nodeCopy;
+    }
 }

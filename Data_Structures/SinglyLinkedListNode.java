@@ -49,4 +49,18 @@ public class SinglyLinkedListNode<T extends Comparable<T>>{
 		data = initialData;
 		next = nextNode;
 	}
+
+	// **************************************************
+    // Methods
+    // **************************************************
+
+	/**
+     * Creates and returns a deep copy of this Node.
+     * @return 
+     *	A new Node which is a copy of the original Node
+     */
+    public SinglyLinkedListNode clone(){
+    	SinglyLinkedListNode<T> nodeCopy = new SinglyLinkedListNode<T>(this.data, this.next);
+    	return nodeCopy;
+    }
 }
