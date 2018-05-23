@@ -61,6 +61,7 @@ Included methods are:
 
 
 **Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/Node.java
+
 #### Singly Linked Node
 A Node class to hold generic comparable data, and a pointer another node. A building block for a singly linked list.<br>
 Included methods are:
@@ -70,6 +71,7 @@ Included methods are:
 
 
 **Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/SinglyLinkedListNode.java
+
 #### Binary Tree Node
 A Node class to hold generic comparable data, and three pointers: two to child nodes and one to a parent node. A building block for binary trees.<br>
 Included methods are:
