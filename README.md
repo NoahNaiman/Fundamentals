@@ -71,7 +71,7 @@ Included methods are:
 
 **Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/SinglyLinkedListNode.java
 #### Binary Tree Node
-A Node class to hold generic comparable data, and three points: two to child nodes and one to a parent node. A building block for binary trees.<br>
+A Node class to hold generic comparable data, and three pointers: two to child nodes and one to a parent node. A building block for binary trees.<br>
 Included methods are:
 * Unparameterized constructor
 * Parameterized constructor to set data
@@ -93,5 +93,6 @@ Included methods are:
 * Clone list
 * Get a reversed version of the list
 * Print out list
+
 
 **Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/SinglyLinkedList.java
