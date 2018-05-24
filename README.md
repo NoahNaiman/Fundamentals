@@ -82,7 +82,7 @@ Included methods are:
 _Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/SinglyLinkedListNode.java
 
 
-##Trees
+## Trees
 
 ### Binary Search Tree
 A tree where each node has at most two children: left and right. All left children's data will be comparably less than their parent's.
