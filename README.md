@@ -12,11 +12,11 @@ align="center">
 
 
 
-## Table of Contents
+# Table of Contents
 - [Philosophy](#philosophy)
 - [Data Structures](#data-structures)
 
-## Philosophy
+# Philosophy
 Towards the end of my very first technical interview two years ago,
 I was asked about Binary Search Trees. I had been getting by the
 entire interview by rattling off standard textbook answers about
@@ -39,11 +39,11 @@ know!
 
 **_Noah Naiman, 2018_**
 
-## Data Structures
+# Data Structures
 
-### Nodes
+## Nodes
 
-#### A Note on Nodes
+### _A Note on Nodes_
 For this project I chose to abstract each type of Node into its
 own seperate class and file. Each Node type inherits from the superclass Node.
 I chose to write each Node seperately instead of built directly into
@@ -53,17 +53,25 @@ larger structures for two main reasons:
 2. As this was a project to deeply learn fundamentals, I wanted to make strong distinctions
 between each Node type.
 
+### Binary Tree Node
+A Node class to hold generic comparable data, and two pointers: a left and right child node. A building block for binary trees.<br>
+Included methods are:
+* Unparameterized constructor
+* Parameterized constructor to set data
 
-#### Node
+
+_Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/BinaryTreeNodeNode.java
+
+### Node
 A basic Node class to hold generic comparable Data.<br>
 Included methods are:
 * Unparameterized constructor
 * Parameterized constructor to set data
 
 
-**Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/Node.java
+_Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/Node.java
 
-#### Singly Linked Node
+### Singly Linked Node
 A Node class to hold generic comparable data, and a pointer another node. A building block for a singly linked list.<br>
 Included methods are:
 * Unparameterized constructor
@@ -71,20 +79,28 @@ Included methods are:
 * Parameterized constructor to set data and next node.
 
 
-**Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/SinglyLinkedListNode.java
+_Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/SinglyLinkedListNode.java
 
-#### Binary Tree Node
-A Node class to hold generic comparable data, and three pointers: two to child nodes and one to a parent node. A building block for binary trees.<br>
+##Trees
+
+### Binary Search Tree
+A tree where each node has at most two children: left and right. All left children's data will be comparably less than their parent's.
+All right children's data will be comparably greater than their parent's.<br>
 Included methods are:
-* Unparameterized constructor
-* Parameterized constructor to set data
+* Insert
+* Get full height
+* Traverse in pre-order: parent, left child, right child.
+* Traverse in order: left child, parent, right child.
+* Traverse in post-order: left child, right child, parent.
+* Traverse in level order.
 
 
-**Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/BinaryTreeNodeNode.java
+_Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/BinarySearchTree.java
 
-### Lists
 
-#### Singly Linked List
+## Lists
+
+### Singly Linked List
 A list in which each node contains data and a pointer to the next node.<br>
 Included methods are:
 * Get length
@@ -98,4 +114,4 @@ Included methods are:
 * Print out list
 
 
-**Quick Link:** https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/SinglyLinkedList.java
+_Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/SinglyLinkedList.java
