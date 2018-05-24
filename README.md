@@ -85,7 +85,8 @@ _Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Struct
 ## Trees
 
 ### Binary Search Tree
-A tree where each node has at most two children: left and right. All left children's data will be comparably less than their parent's.
+A tree where each node has at most two children: left and right.<br>
+All left children's data will be comparably less than their parent's.<br>
 All right children's data will be comparably greater than their parent's.<br>
 Included methods are:
 * Insert
