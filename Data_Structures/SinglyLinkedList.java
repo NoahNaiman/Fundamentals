@@ -156,6 +156,43 @@ public class SinglyLinkedList<T extends Comparable<T>>{
     }
 
     /**
+    * Checks if the list has a loop in it.<br>
+    * Floyd's cycle detection algortithm: https://en.wikipedia.org/wiki/Cycle_detection.<br>
+    * Worst Case Time: O(λ + μ)
+    * @return
+    *   True if there is a loop, false otherwise
+    */
+    public boolean hasLoop(){
+        if(head == null){
+            return false;
+        }
+
+        SinglyLinkedListNode<T> tortoise = head;
+        SinglyLinkedListNode<T> hare = head;
+
+        while(true){
+            tortoise = tortoise.next;
+
+            if(hare.next != null){
+                hare = har.next.next;
+            }
+            else{
+                return falsel
+            }
+
+            if(tortoise == null || hare == null){
+                return false;
+            }
+
+            if(tortoise == hare){
+                return true;
+            }
+
+        }
+
+    }
+
+    /**
     * Returns a String representing the data held in this list.<br>
     * Worst Case Time: O(n)
     * @return
