@@ -113,6 +113,7 @@ Included methods are:
 * Delete all instances of some given data
 * Clone list
 * Get a reversed version of the list
+* Check if the list is looped
 * Print out list
 
 
