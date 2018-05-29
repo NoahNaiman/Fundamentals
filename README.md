@@ -90,7 +90,9 @@ All left children's data will be comparably less than their parent's.<br>
 All right children's data will be comparably greater than their parent's.<br>
 Included methods are:
 * Insert
-* Get full height
+* Search
+* Delete
+* Get height
 * Traverse in pre-order: parent, left child, right child.
 * Traverse in order: left child, parent, right child.
 * Traverse in post-order: left child, right child, parent.

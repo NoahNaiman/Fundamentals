@@ -56,13 +56,57 @@ public class BinarySearchTree<T extends Comparable<T>>{
 	 }
 
 	 /**
+	 * Searches for data toFind.
+	 * @param toFind
+	 *	Data to be searched for
+	 * @return
+	 *	True if toFind is found, false otherwise
+	 */
+	public void search(T toFind){
+		root = search(toFind, root);
+	}
+
+	/**
+	 * Searches for data toFind.
+	 * @param toFind
+	 *	Data to be searched for
+	 * @param subtree
+	 *	Subtree to search through for insertion
+	 * @return
+	 *	True if toFind is found, false otherwise
+	 */
+	public void search(T toFind, BinaryTreeNode<T> subtree){
+		if(subtree == null){
+			return false;
+		}
+		else if(subtree.data.compareTo(toFind) == 0){
+			return true;
+		}
+		else if(subtree.data.compareTo(newData) >= 0){
+			return search(toFind, subtree.left);
+		}
+		else{
+			return search(toFind, subtree.right);
+		}
+	}
+
+	//  /**
+	//  * Deletes the first instance of toDelete, maintaning Binary Search status.
+	//  * @param toDelete
+	//  *	Data to be deleted
+	//  */
+	// public void insert(T newData){
+	// 	root = insert(newData, root);
+	// }
+
+
+	 /**
 	 * Calculates how manu level tree has, starting from root.
 	 * @return
 	 *	Height of tree
 	 */
 	 public int getHeight(){
 	 	return getHeight(root);
-
 	 }
 
 	 /**

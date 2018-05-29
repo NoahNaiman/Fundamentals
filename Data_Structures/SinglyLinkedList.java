@@ -187,9 +187,7 @@ public class SinglyLinkedList<T extends Comparable<T>>{
             if(tortoise == hare){
                 return true;
             }
-
         }
-
     }
 
     /**
