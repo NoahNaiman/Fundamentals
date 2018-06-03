@@ -18,13 +18,13 @@ align="center">
 
 # Philosophy
 Towards the end of my very first technical interview two years ago,
-I was asked about Binary Search Trees. I had been getting by the
-entire interview by rattling off standard textbook answers about
-everything. But when I was asked to actually implement a very
+I was asked about Binary Search Trees. Up until that point 
+I had been getting by through rattling off standard textbook
+answers about everything. But when I was asked to actually implement a very
 basic and essential data structure, I fumbled hard. And it was
 _embarrasing_.
 
-Since then I have become a firm believer in the idea that, if
+Since then I have become a firm believer in the idea that if
 you truly want to understand something you must take it apart
 and put it back together. What I have tried to do with this
 project is to create a comprehensive collection of Computer
@@ -54,7 +54,8 @@ larger structures for two main reasons:
 between each Node type.
 
 ### Binary Tree Node
-A Node class to hold generic comparable data, and two pointers: a left and right child node. A building block for binary trees.<br>
+A Node class to hold generic comparable data, and two pointers: a left and right child node.<br>
+A building block for binary trees.<br>
 Included methods are:
 * Unparameterized constructor
 * Parameterized constructor to set data
@@ -72,7 +73,8 @@ Included methods are:
 _Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/Node.java
 
 ### Singly Linked Node
-A Node class to hold generic comparable data, and a pointer another node. A building block for a singly linked list.<br>
+A Node class to hold generic comparable data, and a pointer another node.<br>
+A building block for a singly linked list.<br>
 Included methods are:
 * Unparameterized constructor
 * Parameterized constructor to set data

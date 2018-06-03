@@ -71,11 +71,11 @@ public class BinarySearchTree<T extends Comparable<T>>{
 	 * @param toFind
 	 *	Data to be searched for
 	 * @param subtree
-	 *	Subtree to search through for insertion
+	 *	Subtree to search through
 	 * @return
 	 *	True if toFind is found, false otherwise
 	 */
-	public void search(T toFind, BinaryTreeNode<T> subtree){
+	public boolean search(T toFind, BinaryTreeNode<T> subtree){
 		if(subtree == null){
 			return false;
 		}
@@ -90,14 +90,57 @@ public class BinarySearchTree<T extends Comparable<T>>{
 		}
 	}
 
-	//  /**
-	//  * Deletes the first instance of toDelete, maintaning Binary Search status.
-	//  * @param toDelete
-	//  *	Data to be deleted
-	//  */
-	// public void insert(T newData){
-	// 	root = insert(newData, root);
-	// }
+	 /**
+	 * Deletes the first instance of toDelete, maintaning Binary Search status.
+	 * @param toDelete
+	 *	Data to be deleted
+	 */
+	public void delete(T toDelete){
+		root = delete(toDelete, root);
+	}
+
+	/**
+	 * Deletes the first instance of toDelete, maintaning Binary Search status.
+	 * @param toDelete
+	 *	Data to be deleted
+	 * @param subtree
+	 *	Subtree to search through for deletion
+	 * @return
+	 *	New subtree post deletion
+	 */
+	public BinaryTreeNode<T> delete(T toDelete, BinaryTreeNode<T> subtree){
+		if(subtree == null){
+			 throw new RuntimeException("Cannot delete, subtree is empty.");
+		}
+		else{
+			if(subtree.data.compareTo(toDelete) > 0){
+				return delete(toDelete, subtree.left);
+			}
+			else if(subtree.data.compareTo(toDelete) < 0){
+				return delete(toDelete, subtree.right);
+			}
+			else{
+				if(subtree.left == null){
+					return subtree.right;
+				}
+				else if(subtree.right == null){
+					return subtree.left;
+				}
+				else{
+					//Get data from rightmost node of left subtree
+					BinaryTreeNode<T> temp = subtree.left;
+					while(temp.right != null){
+						temp = temp.right;
+					}
+					subtree.data = temp.data;
+
+					//Delete rightmost node of left subtree
+					subtree.left = delete(subtree.left, subtree.data);
+				}
+			}
+		}
+		return subtree;
+	}
 
 
 	 /**
