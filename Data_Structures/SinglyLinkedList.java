@@ -190,6 +190,51 @@ public class SinglyLinkedList<T extends Comparable<T>>{
         }
     }
 
+     /**
+    * Unloops a list if a loop exists
+    * Worst Case Time: O(λ + μ)
+    */
+
+     public void unloop(){
+        if(!hasLoop()){
+            return;
+        }
+
+        SinglyLinkedListNode<T> start = head;
+        SinglyLinkedListNode<T> tortoise = head;
+        SinglyLinkedListNode<T> hare = head;
+
+        while(true){
+            tortoise = tortoise.next;
+            hare = hare.next.next;
+
+            //Check if list is just one cycle
+            if(tortoise.next == start){
+                tortoise.next = null;
+            }
+            //When tortoise and hare meet, stop cycling
+            if(tortoise == hare){
+                break;
+            }
+        }
+        hare = head;
+
+        while(tortoise.next != hare.next){
+            tortoise = tortoise.next;
+            hare = hare.next;
+        }
+
+        start = hare.next;
+        hare = start;
+
+        //Search for start of list
+        while(hare.next != start){
+            hare = hare.next;
+        }
+
+        hare.next = null;
+     }
+
     /**
     * Returns a String representing the data held in this list.<br>
     * Worst Case Time: O(n)

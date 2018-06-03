@@ -93,7 +93,7 @@ All right children's data will be comparably greater than their parent's.<br>
 Included methods are:
 * Insert
 * Search
-* Delete
+* Delete first found instance of given data
 * Get height
 * Traverse in pre-order: parent, left child, right child.
 * Traverse in order: left child, parent, right child.
@@ -110,14 +110,15 @@ _Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Struct
 A list in which each node contains data and a pointer to the next node.<br>
 Included methods are:
 * Get length
-* Prepend to list
-* Append to list
-* Check if something is in the list
-* Delete the first found instance of some given data
-* Delete all instances of some given data
+* Prepend
+* Append
+* Search
+* Delete first found instance of given data
+* Delete all instances of given data
 * Clone list
 * Get a reversed version of the list
-* Check if the list is looped
+* Check for a loop
+* Unloop
 * Print out list
 
 
