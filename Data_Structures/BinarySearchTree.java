@@ -62,8 +62,8 @@ public class BinarySearchTree<T extends Comparable<T>>{
 	 * @return
 	 *	True if toFind is found, false otherwise
 	 */
-	public void search(T toFind){
-		root = search(toFind, root);
+	public boolean search(T toFind){
+		return search(toFind, root);
 	}
 
 	/**
@@ -82,7 +82,7 @@ public class BinarySearchTree<T extends Comparable<T>>{
 		else if(subtree.data.compareTo(toFind) == 0){
 			return true;
 		}
-		else if(subtree.data.compareTo(newData) >= 0){
+		else if(subtree.data.compareTo(toFind) >= 0){
 			return search(toFind, subtree.left);
 		}
 		else{
@@ -135,7 +135,7 @@ public class BinarySearchTree<T extends Comparable<T>>{
 					subtree.data = temp.data;
 
 					//Delete rightmost node of left subtree
-					subtree.left = delete(subtree.left, subtree.data);
+					subtree.left = delete(subtree.data, subtree.left);
 				}
 			}
 		}
@@ -173,7 +173,6 @@ public class BinarySearchTree<T extends Comparable<T>>{
 	 	else{
 	 		return rightHeight+1;
 	 	}
-
 	 }
 
 	 /**
