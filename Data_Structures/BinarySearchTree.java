@@ -133,7 +133,7 @@ public class BinarySearchTree<T extends Comparable<T>>{
 						temp = temp.right;
 					}
 					subtree.data = temp.data;
-
+					
 					//Delete rightmost node of left subtree
 					subtree.left = delete(subtree.data, subtree.left);
 				}
