@@ -15,6 +15,7 @@ align="center">
 # Table of Contents
 - [Philosophy](#philosophy)
 - [Data Structures](#data-structures)
+- [Algorithms](#algorithms)
 
 # Philosophy
 Towards the end of my very first technical interview two years ago,
@@ -28,9 +29,8 @@ Since then I have become a firm believer in the idea that if
 you truly want to understand something you must take it apart
 and put it back together. What I have tried to do with this
 project is to create a comprehensive collection of Computer
-Science fundamentals. My ultimate goal is to have everything
-from ArrayLists to Zippers implemented in here. Hopefully, at
-the end of it, the nuts and bolts will be second nature.
+Science fundamentals. Hopefully, at the end of it, the nuts
+and bolts will be second nature.
 
 This is certainly a personal project, but the code is open
 and I encourage you to take a look and assess my implementations.
@@ -123,3 +123,24 @@ Included methods are:
 
 
 _Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/SinglyLinkedList.java
+
+# Algorithms
+
+## Dynamic Programming
+
+### The coin change problem
+Imagine you are have a set of coins, each with a different value. Now, given an infinite number of each
+coin, you must make change for some number of cents, n.
+
+This problem can be solved using tabulation, or 'bottom up' dynamic programming. To solve it, we create
+a table of length n+1, as we will need to tabulate results starting from zero and including n. We set
+our base case, table[0], to be one as there is only one way to make change for it. From here, we simply pick
+up each coin, then see how many ways we can make change with it for each value between itself and n. As we go,
+we update the precomputed values in our table. This prevents the need for overlapping subproblems. This process
+is depicted below:
+```python
+for i in range(len(coins)):
+		for j in range(coins[i], n+1):
+			tab[j] += tab[j-coins[i]]
+```
+Time complexity: O(len(coins)*n)
