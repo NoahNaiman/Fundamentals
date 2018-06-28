@@ -134,7 +134,7 @@ coin, you must make change for some number of cents, n.
 
 This problem can be solved using tabulation, or 'bottom up' dynamic programming. To solve it, we create
 a table of length n+1, as we will need to tabulate results starting from zero and including n. We set
-our base case, table[0], to be one as there is only one way to make change for it. From here, we simply pick
+our base case, table[0], to be 1 as there is only one way to make change for it. From here, we simply pick
 up each coin, then see how many ways we can make change with it for each value between itself and n. As we go,
 we update the precomputed values in our table. This prevents the need for overlapping subproblems. This process
 is depicted below:
