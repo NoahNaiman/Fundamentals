@@ -143,6 +143,6 @@ for i in range(len(coins)):
 	for j in range(coins[i], n+1):
 		tab[j] += tab[j-coins[i]]
 ```
-Time complexity: O(len(coins)*n)
+Time complexity: O(len(coins) * n)
 
 _Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Algorithms/CoinChange.py
