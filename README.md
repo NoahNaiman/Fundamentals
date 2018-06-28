@@ -140,7 +140,7 @@ we update the precomputed values in our table. This prevents the need for overla
 is depicted below:
 ```python
 for i in range(len(coins)):
-		for j in range(coins[i], n+1):
-			tab[j] += tab[j-coins[i]]
+	for j in range(coins[i], n+1):
+		tab[j] += tab[j-coins[i]]
 ```
 Time complexity: O(len(coins)*n)
