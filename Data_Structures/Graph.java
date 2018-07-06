@@ -1,19 +1,21 @@
 import java.util.Hashtable;
 import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * <h1>Graph Class</h1>
- * A graph of nodes connected by
- * edges. This class works for both
- * directed and undirected graphs.
- * This representation uses a
- * hashtable of HashSets as a key
- * value pair in the form of
- * node : {edges}.
+ * A graph of simple nodes connected
+ * by edges. This class works for
+ * both directed and undirected
+ * graphs. This representation uses
+ * a hashtable of HashSets in the
+ * key: value form of, node : {edges}.
  *
  * @author Noah Naiman
  * @since 7-6-2018
  */
+
 public class Graph<T extends Comparable<T>>{
 
 	// **************************************************
@@ -144,6 +146,34 @@ public class Graph<T extends Comparable<T>>{
 				adjacencyList.get(node).remove(edge);
 			}
 		}
+	}
+
+	/**
+	 * Performs a breadth first search, starting
+	 * from a given node.<br>
+	 * At each level a given bfsOperation is perfomed.
+	 * @param startNode
+	 *	Node from which to begind the search.
+	 * @param bfsOperation
+	 *	A lambda function to peform on each visited node.
+	 */
+	public void bfs(T startNode, BFSOperation<T> bfsOperation){
+		Queue<T> queue = new LinkedList<T>();
+		HashSet<T> visited = new HashSet<>();
+	 	queue.add(startNode);
+	 	visited.add(startNode);
+
+	 	while(!queue.isEmpty()){
+	 		T currentNode = queue.poll();
+	 		bfsOperation.operation(currentNode);
+
+	 		for(T node : adjacencyList.get(currentNode)){
+	 			if(!visited.contains(node)){
+	 				queue.add(node);
+	 				visited.add(node);
+	 			}
+	 		}
+	 	}
 	}
 
 }
