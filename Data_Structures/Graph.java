@@ -29,7 +29,7 @@ public class Graph<T extends Comparable<T>>{
     /**
 	 * Adds a new node with no edges to adjacency list.
 	 * @param node
-	 *	New node to be added
+	 *	New node to be added.
 	 */
     public void add_edge(T node){
 		HashSet<T> newSet = new HashSet<T>();
@@ -37,12 +37,12 @@ public class Graph<T extends Comparable<T>>{
 	}
 
 	/**
-	 * Adds a new edges to adjacency list. If node does not
-	 * exist, adds new node as well.
+	 * Adds a new edges to adjacency list.<br>
+	 * If node does not exist, adds new node as well.
 	 * @param node
-	 *	Node whose edge set edge should be added to
+	 *	Node whose edge set edge should be added to.
 	 * @param edge
-	 *	New edge to be added
+	 *	New edge to be added.
 	 */
 	public void add_edge(T node, T edge){
 		if(adjacencyList.containsKey(node)){
@@ -56,12 +56,12 @@ public class Graph<T extends Comparable<T>>{
 	}
 
 	/**
-	 * Adds multiple new edges to adjacency list. If node does not
-	 * exist, adds new node as well.
+	 * Adds multiple new edges to adjacency list.<br>
+	 * If node does not exist, adds new node as well.
 	 * @param node
-	 *	Node whose edge set edges should be added to
+	 *	Node whose edge set edges should be added to.
 	 * @param edges
-	 *	New edges to be added
+	 *	New edges to be added.
 	 */
 	public void add_edge(T node, T[] edges){
 		if(adjacencyList.containsKey(node)){
@@ -75,6 +75,48 @@ public class Graph<T extends Comparable<T>>{
 				newSet.add(edge);
 			}
 			adjacencyList.put(node, newSet);
+		}
+	}
+
+	/**
+	 * Removes all edges connected to a given node.<br>
+	 * If node does not exist, adds new node as well.
+	 * @param node
+	 *	Node whose edge set edges should be emptied.
+	 */
+	public void delete_edge(T node){
+		if(adjacencyList.containsKey(node)){
+			for(T edge : adjacencyList.get(node)){
+				adjacencyList.get(node).remove(edge);
+			}
+		}
+	}
+
+	/**
+	 * Removes an edge connected to a given node.<br>
+	 * @param node
+	 *	Node from whose edge set edge should be removed.
+	 * @param edge
+	 *	Edge to be removed.
+	 */
+	public void delete_edge(T node, T edge){
+		if(adjacencyList.containsKey(node)){
+			adjacencyList.get(node).remove(edge);
+		}
+	}
+
+	/**
+	 * Removes edges connected to a given node.<br>
+	 * @param node
+	 *	Node from whose edge set edges should be removed.
+	 * @param edges
+	 *	Edges to be removed.
+	 */
+	public void delete_edge(T node, T[] edges){
+		if(adjacencyList.containsKey(node)){
+			for(T edge : edges){
+				adjacencyList.get(node).remove(edge);
+			}
 		}
 	}
 
