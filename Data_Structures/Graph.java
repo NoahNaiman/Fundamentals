@@ -33,7 +33,7 @@ public class Graph<T extends Comparable<T>>{
 	 * @param node
 	 *	New node to be added.
 	 */
-    public void add_edge(T node){
+    public void add_node(T node){
 		HashSet<T> newSet = new HashSet<T>();
 		adjacencyList.put(node, newSet);
 	}
