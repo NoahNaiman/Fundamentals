@@ -79,6 +79,32 @@ public class Graph<T extends Comparable<T>>{
 	}
 
 	/**
+	 * Deletes a node from graph.<br>
+	 * @param node
+	 *	Node to be removed
+	 */
+	public void delete_node(T node){
+		for(T key : adjacencyList.keySet()){
+			adjacencyList.get(key).remove(node);
+		}
+		adjacencyList.remove(node);
+	}
+
+	/**
+	 * Deletes given nodes from graph.<br>
+	 * @param nodes
+	 *	Nodes to be removed
+	 */
+	public void delete_node(T[] nodes){
+		for(T item : nodes){
+			for(T key : adjacencyList.keySet()){
+				adjacencyList.get(key).remove(item);
+			}
+			adjacencyList.remove(item);
+		}
+	}
+
+	/**
 	 * Removes all edges connected to a given node.<br>
 	 * If node does not exist, adds new node as well.
 	 * @param node
