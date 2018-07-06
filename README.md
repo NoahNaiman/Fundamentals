@@ -41,6 +41,40 @@ know!
 
 # Data Structures
 
+## Graphs
+
+### General Graph
+A list of nodes wherein each node maps to a set of all other nodes it is connected to.<br>
+Included methods are:
+* Add node
+* Add edge
+* Delete node
+* Delete edge
+* Breadth first search
+
+
+_Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/Graph.java
+
+## Lists
+
+### Singly Linked List
+A list in which each node contains data and a pointer to the next node.<br>
+Included methods are:
+* Get length
+* Prepend
+* Append
+* Search
+* Delete first found instance of given data
+* Delete all instances of given data
+* Clone list
+* Get a reversed version of the list
+* Check for a loop
+* Unloop
+* Print out list
+
+
+_Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/SinglyLinkedList.java
+
 ## Nodes
 
 ### _A Note on Nodes_
@@ -102,27 +136,6 @@ Included methods are:
 
 
 _Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/BinarySearchTree.java
-
-
-## Lists
-
-### Singly Linked List
-A list in which each node contains data and a pointer to the next node.<br>
-Included methods are:
-* Get length
-* Prepend
-* Append
-* Search
-* Delete first found instance of given data
-* Delete all instances of given data
-* Clone list
-* Get a reversed version of the list
-* Check for a loop
-* Unloop
-* Print out list
-
-
-_Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Structures/SinglyLinkedList.java
 
 # Algorithms
 
