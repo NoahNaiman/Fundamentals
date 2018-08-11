@@ -141,6 +141,23 @@ _Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Data_Struct
 
 ## Dynamic Programming
 
+### Kadane's Algorithm
+Given an array of size n containing only positive and negative integers, find the maximum continuous
+subarray sum. For example, given array [1, -5, 3, -4, -7], the maximum continuous subarray sum would
+be 4.
+
+To solve this problem we use tabulation or 'bottom up' dynamic programming. First we set both the current
+and the global maximums to array[0]. We then simply walk through each following element. At each step we
+perform the following comparison: if the current element is greater than itself plus the current maximum
+sum, then it is the new current maximum. Otherwise it is added to the current maximum. We then compare this
+to the global maximum. If it is larger, we modify the global maximum. This comparison is depicted below:
+```python
+currentMax = max(i, currentMax+i)
+globalMax = max(globalMax, currentMax)
+```
+
+Time complexity: O(len(array))
+
 ### The coin change problem
 Imagine you are have a set of coins, each with a different value. Now, given an infinite number of each
 coin, you must make change for some number of cents, n.
