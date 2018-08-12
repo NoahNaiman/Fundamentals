@@ -13,7 +13,6 @@ def kadane(arr):
 
 
 if __name__ == '__main__':
-	print(kadane([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
 	vals = []
 	print('Enter 999 to exit.')
 	while(True):
