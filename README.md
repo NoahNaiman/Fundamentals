@@ -158,7 +158,7 @@ globalMax = max(globalMax, currentMax)
 
 Time complexity: O(len(array))
 
-_Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Algorithms/Kadane.py
+_Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Algorithms/Dynamic_Programming/Kadane.py
 
 ### Knapsack
 Given a container with capacity C, and a set of n items each with its own corresponding weight and value,
@@ -187,7 +187,7 @@ exceeding our capacity. This process is depicted below:
 Time complexity: O(items * capacity)
 
 _Quick Link:_
-https://github.com/NoahNaiman/Fundamentals/blob/master/Algorithms/ZeroOneKnapsack.py
+https://github.com/NoahNaiman/Fundamentals/blob/master/Algorithms/Dynamic_Programming/ZeroOneKnapsack.py
 
 
 ### The coin change problem
@@ -207,4 +207,4 @@ for i in range(len(coins)):
 ```
 Time complexity: O(len(coins) * n)
 
-_Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Algorithms/CoinChange.py
+_Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Algorithms/Dynamic_Programming/CoinChange.py
