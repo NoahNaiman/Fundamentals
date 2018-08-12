@@ -19,8 +19,8 @@ align="center">
 
 # Philosophy
 Towards the end of my very first technical interview two years ago,
-I was asked about Binary Search Trees. Up until that point 
-I had been getting by through rattling off standard textbook
+I was asked about Hashtables. Up until that point I had been getting
+through interviews and classes by  rattling off standard textbook
 answers about everything. But when I was asked to actually implement a very
 basic and essential data structure, I fumbled hard. And it was
 _embarrasing_.
@@ -157,6 +157,38 @@ globalMax = max(globalMax, currentMax)
 ```
 
 Time complexity: O(len(array))
+
+_Quick Link:_ https://github.com/NoahNaiman/Fundamentals/blob/master/Algorithms/Kadane.py
+
+### Knapsack
+Given a container with capacity C, and a set of n items each with its own corresponding weight and value,
+determine the maximum possible value that can be put into the container without exceeding capacity. This
+problem comes in two flavors: zero-one, and unbounded.
+
+#### zero-one knapsack
+The key to solving this problem is transforming the problem subtree into a tabulation array. We generalize
+the function call to knapsack(capacity, items). So each sub-problem would be knapsack(items-1, capacity)
+if we did not take the item, knapsack(items-1, capacity-1) if we did. From this generalization it is easy
+to see how we would recalculate problems many times with a naive recursive solution. In order to prevent
+this we can simply tabulate using an array with capacity rows and items columns: tab[items][capacity].
+We can simply loop through each possibility and see if picking up the new item adds value without
+exceeding our capacity. This process is depicted below:
+```python
+	i = remainingItems
+	w = remainingWeight
+	if(i == 0 or w == 0):
+		tab[i][w] = 0
+	elif(weights[i-1] <= w):
+		tab[i][w] = max(values[i-1] + tab[i-1][w-weights[i-1]], tab[i-1][w])
+	else:
+		tab[i][w] = tab[i-1][w]
+```
+
+Time complexity: O(items * capacity)
+
+_Quick Link:_
+https://github.com/NoahNaiman/Fundamentals/blob/master/Algorithms/ZeroOneKnapsack.py
+
 
 ### The coin change problem
 Imagine you are have a set of coins, each with a different value. Now, given an infinite number of each
